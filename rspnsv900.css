@@ -1,0 +1,260 @@
+@media (max-width: 900px) {
+    
+    h3{
+        font-size: 1.5em;
+    }
+
+    h1{
+        font-size: 3.7em;
+    }
+    
+    h2{
+        font-size: 2.2em;
+    }
+
+    #portada1 div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portada1 div div{
+        align-items: center;
+        padding-left: 0;
+    }
+
+    #portada1 div div h2:nth-child(1){
+        text-align: center;
+    }
+
+    #portada1 div img{
+        width: 300px;
+    }
+    
+    
+    #indice {
+        aspect-ratio: 6 / 8;
+        width: min(95vw, 600px);
+        gap: 3vw;
+        height: auto;
+        margin: 0 auto;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    #amarillo{
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+    }
+    
+    #rojo{
+        grid-column: 4 / 6;
+        grid-row: 2 / 4;
+    }
+    
+    #naranja{
+        grid-column: 2 / 4;
+        grid-row: 4 / 6;
+    }
+    
+    #azul{
+        grid-column: 4 / 6;
+        grid-row: 4 / 6;
+    }
+    
+    #blanco{
+        grid-column: 2 / 4;
+        grid-row: 6 / 8;
+    }
+    
+    #verde{
+        grid-column: 4 / 6;
+        grid-row: 6 / 8;
+    }
+
+    /* PARA QUE SE AGRANDEN CAUNDO HACER HOVER */
+    #indice:has(#amarillo:active) #amarillo,
+    #indice:has(#rojo:active) #rojo,
+    #indice:has(#naranja:active) #naranja,
+    #indice:has(#azul:active) #azul,
+    #indice:has(#blanco:active) #blanco,
+    #indice:has(#verde:active) #verde {
+    transform: scale(200%);
+    z-index: 10; 
+    }
+
+    #indice:has(#amarillo:hover) #amarillo h3,
+    #indice:has(#rojo:hover) #rojo h3,
+    #indice:has(#naranja:hover) #naranja h3,
+    #indice:has(#azul:hover) #azul h3,
+    #indice:has(#blanco:hover) #blanco h3,
+    #indice:has(#verde:hover) #verde h3 {
+    left: 5%;
+    top: 5%;
+    }
+
+    /* AMARILLO */
+    #indice:has(#amarillo:hover) #rojo,
+    #indice:has(#amarillo:hover) #azul {
+        transform: translate(50%, 0%); 
+    }
+    #indice:has(#amarillo:hover) #naranja,
+    #indice:has(#amarillo:hover) #blanco {
+        transform: translate(0%, 50%); 
+    }
+
+    /* ROJO */
+    #indice:has(#rojo:hover) #amarillo,
+    #indice:has(#rojo:hover) #naranja {
+        transform: translate(-50%, 0%); 
+    }
+    #indice:has(#rojo:hover) #azul,
+    #indice:has(#rojo:hover) #verde {
+        transform: translate(0%, 50%); 
+    }
+    #indice:has(#rojo:hover) #blanco {
+        transform: translate(0%, 0%); 
+    }
+
+    /* NARANJA */
+    #indice:has(#naranja:hover) #amarillo {
+        transform: translate(0%, -50%); 
+    }
+    #indice:has(#naranja:hover) #blanco {
+        transform: translate(0%, 50%); 
+    }
+    #indice:has(#naranja:hover) #azul {
+        transform: translate(50%, 0%);
+    }
+    #indice:has(#naranja:hover) #rojo {
+        transform: translate(50%, -50%); 
+    }
+    #indice:has(#naranja:hover) #verde {
+        transform: translate(50%, 50%);
+    }
+
+    /* AZUL */
+    #indice:has(#azul:hover) #amarillo {
+        transform: translate(-50%, -50%); 
+    }
+    #indice:has(#azul:hover) #blanco {
+        transform: translate(-50%, 50%); 
+    }
+    #indice:has(#azul:hover) #naranja {
+        transform: translate(-50%, 0%);
+    }
+    #indice:has(#azul:hover) #rojo {
+        transform: translate(0%, -50%); 
+    }
+    #indice:has(#azul:hover) #verde {
+        transform: translate(0%, 50%);
+    }
+
+        /* BLANCO */
+    #indice:has(#blanco:hover) #verde,
+    #indice:has(#blanco:hover) #azul {
+        transform: translate(50%, 0%); 
+    }
+    #indice:has(#blanco:hover) #naranja,
+    #indice:has(#blanco:hover) #amarillo {
+        transform: translate(0%, -50%); 
+    }
+    #indice:has(#blanco:hover) #rojo {
+        transform: translate(0%, 0%); 
+    }
+
+        /* VERDE */
+    #indice:has(#verde:hover) #blanco,
+    #indice:has(#verde:hover) #naranja {
+        transform: translate(-50%, 0%); 
+    }
+    #indice:has(#verde:hover) #rojo,
+    #indice:has(#verde:hover) #azul {
+        transform: translate(0%, -50%); 
+    }
+    #indice:has(#verde:hover) #amarillo {
+        transform: translate(0%, 0%); 
+    }
+
+    body .contenidogrid{
+        width: 90%;
+        gap: 1.5em;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 100px;
+    }
+
+    .contenidogrid div{
+        border-radius: 1.5em;
+    }
+
+   .contenidogrid .principal1{
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+    
+    .contenidogrid .principal2{
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+    
+    .contenidogrid .paleta1{
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    
+    .contenidogrid .paleta2{
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+    
+    .contenidogrid .paleta3{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    .contenidogrid  .paleta4{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    .contenidogrid  .paleta5{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    .contenidogrid .largo1{
+        background-size: 70%;
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    
+    .contenidogrid .medio1{
+        grid-column: span 6;
+        grid-row: span 3;
+    }
+    
+    .contenidogrid .medio2{
+        grid-column: span 3;
+        grid-row: span 3;
+    }
+    
+    .contenidogrid .medio3{
+        grid-column: span 3;
+        grid-row: span 3;
+    }
+    
+    .contenidogrid .medio4{
+        grid-column: span 6;
+        grid-row: span 3;
+    }
+    
+    .contenidogrid .largo2{
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    
+    .contenidogrid .grande{
+        grid-column: span 6;
+        grid-row: span 4;
+    }
+    
+
+}
