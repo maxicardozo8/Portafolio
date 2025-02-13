@@ -12,6 +12,10 @@
         font-size: 1.9em;
     }
 
+    p{
+        font-size: 0.8em
+    }
+
     #portada1 span{
         min-width: 70px;
     }
@@ -117,6 +121,10 @@ body .contenidogrid{
 .contenidogrid .grande{
     grid-column: span 4;
     grid-row: span 4;
+}
+
+.contenidogrid .aclaracion{
+    grid-column: span 4;
 }
 
 }
