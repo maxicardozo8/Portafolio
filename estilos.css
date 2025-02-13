@@ -634,8 +634,9 @@ body .contenidogrid{
 
 .contenidogrid .aclaracion{
     display: flex;
-    grid-column: span 4;
+    grid-column: span 10;
     grid-row: span 1;
+    align-self: end;
 }
 .contenidogrid .aclaracion div{
     display: flex;
