@@ -21,6 +21,7 @@ h1, h2, h3, h4, p{
 
 h1{
     font-size: 4em;
+    z-index: 1;
 }
 
 h2{
@@ -51,6 +52,7 @@ h3{
 
 #portada1 div img{
     width: 380px;
+    z-index: 1;
 }
 
 
@@ -95,8 +97,8 @@ h3{
 }
 
 #portada1 span:nth-child(8){
-    left: 65%;
-    top: -5%;
+    left: 25%;
+    top: -7%;
 }
 
 #portada1 span:hover{
