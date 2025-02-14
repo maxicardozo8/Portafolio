@@ -1,5 +1,8 @@
 @media (max-width: 900px) {
-    
+    body{
+        position: relative;
+    }
+
     h3{
         font-size: 1.5em;
     }
@@ -33,6 +36,53 @@
 
     #portada1 div img{
         width: 300px;
+    }
+
+   #menu {
+        position: fixed;
+        display: block;
+        fill: #FFFBFF;
+        left: 6%;
+        top: 50px;
+        width: 25px;
+    }
+
+    nav{
+        display: block;
+        display: flex;
+        height: 100vh;
+        width: 30%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #071013;
+        align-items: flex-start;
+        padding: 80px 5%;
+        flex-direction: column;
+    }
+
+
+    nav #casita {
+        position: absolute;
+        transform: translate(50%, 0%);
+        fill: #FFFBFF;
+        left: 5%;
+        top: 50px;
+        width: 25px;
+        z-index: 10;
+    }
+
+    nav div h4 {
+        transform: translateX(0%);
+    }
+
+    nav div {
+        max-width: 300px; /* Suficientemente grande para acomodar el contenido */
+        gap: 10px;
+    }
+
+    body .contenidogrid:first-of-type{
+        padding-top: 80px;
     }
     
     
@@ -264,6 +314,8 @@
     .contenidogrid .aclaracion{
         grid-column: span 6;
     }
+
+
     
 
 }
