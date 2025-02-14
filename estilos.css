@@ -480,16 +480,21 @@ nav a{
     text-decoration: none;
 }
 
-nav svg {
+nav #casita {
     position: absolute;
     transform: translate(-50%, -50%);
     fill: #FFFBFF;
     left: -50px;
     top: 50%;
     width: 25px;
+    z-index: 10;
 }
 
-nav svg:hover{
+#menu {
+    display: none;
+}
+
+nav #casita:hover{
     fill: #353535;
 }
 
