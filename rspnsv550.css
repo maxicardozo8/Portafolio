@@ -32,6 +32,15 @@
         width: 250px;
     }
 
+    nav #menu {
+        left: 3%;
+    }
+
+    nav{
+        width: 50%;
+        padding: 80px 8%;
+    }
+
     #indice:has(#amarillo:hover) #amarillo h3,
     #indice:has(#rojo:hover) #rojo h3,
     #indice:has(#naranja:hover) #naranja h3,
