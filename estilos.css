@@ -494,6 +494,21 @@ nav #casita {
     display: none;
 }
 
+input[type="checkbox"] {
+    appearance: none; /* Elimina el estilo predeterminado */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    position: absolute; /* Lo saca del flujo pero sigue interactuable si se usa un label */
+  }
+
+
+
 nav #casita:hover{
     fill: #353535;
 }
