@@ -549,6 +549,23 @@ nav .cuadradito {
     z-index: 1;
 }
 
+nav #redes{
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    max-width: 300px;
+}
+
+
+nav #redes a div .negro{
+    display: flex;
+} 
+
+nav #redes a div .negro img{
+    width: 20px;
+} 
+
+
 /* Expansión progresiva del div al hacer hover */
 nav div:hover {
     max-width: 300px; /* Suficientemente grande para acomodar el contenido */
@@ -691,6 +708,9 @@ body .contenidogrid{
 }
 .composicion{
     background-color: #03A63C;
+}
+.negro{
+    background-color: #191716;
 }
 
 #Agus .principal1{
