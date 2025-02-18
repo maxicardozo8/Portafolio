@@ -714,13 +714,11 @@ body .contenidogrid{
 }
 
 #Agus .principal1{
-    background: url(img/Agus/SimboloAgus.svg) no-repeat center center #9C61CF;
-    background-size: 40%;
+    background: url(img/Contenido/identidad/Agus/SimboloAgus.svg) center/40% no-repeat #9C61CF;
 }
 
 #Agus .principal2{
-    background: url(img/Agus/LogotipoAgus.svg) no-repeat center center #191716;
-    background-size: 70%;
+    background: url(img/Contenido/identidad/Agus/LogotipoAgus.svg) center/70% no-repeat #191716;
     border: clamp(2px, 0.5vw, 5px) solid #FCF8F8;
 }
 
@@ -747,29 +745,28 @@ body .contenidogrid{
 }
 
 #Agus .largo1{
-    background: url(img/Agus/TipografiaAgus.svg) no-repeat center center #FCF8F8;
-    background-size: 70%;
+    background: url(img/Contenido/identidad/Agus/TipografiaAgus.svg) center/70% no-repeat #FCF8F8;
 }
 
 #Agus .medio1{
-    background: url(img/Agus/MacBook_Dresser_Mockup_1\ 1.jpg) no-repeat center center/cover #FCF8F8;
+    background: url(img/Contenido/identidad/Agus/MacBook_Dresser_Mockup_1\ 1.jpg) no-repeat center center/cover #FCF8F8;
 }
 
 #Agus .medio2{
-    background: url(img/Agus/ConstruccionLogoAgus.gif) no-repeat center center/cover #FCF8F8;
+    background: url(img/Contenido/identidad/Agus/ConstruccionLogoAgus.gif) no-repeat center center/cover #FCF8F8;
 }
 
 #Agus .medio3{
-    background: url(img/Agus/LinkedinAgus.png) no-repeat center center/cover #191716;
+    background: url(img/Contenido/identidad/Agus/LinkedinAgus.png) no-repeat center center/cover #191716;
     border: clamp(2px, 0.5vw, 5px) solid #FCF8F8;
 }
 
 #Agus .medio4{
-    background: url(img/Agus/IMG_4193.JPG) no-repeat center center/cover #FCF8F8;
+    background: url(img/Contenido/identidad/Agus/IMG_4193.JPG) no-repeat center center/cover #FCF8F8;
 }
 
 #Agus .largo2{
-    background: url(img/Agus/PatronAgus.svg) no-repeat center center/cover #FCF8F8;
+    background: url(img/Contenido/identidad/Agus/PatronAgus.svg) no-repeat center center/cover #FCF8F8;
 }
 
 #Agus .grande{
@@ -786,4 +783,136 @@ body .contenidogrid{
     position: absolute;
     top: 0;
     left: 0;
+}
+
+
+
+#atelier .principal1{
+    background: url(img/Contenido/identidad/Atelier/logo_anterior.svg) center/60% no-repeat #FFFFFF;
+}
+
+#atelier .principal2{
+    background: url(img/Contenido/identidad/Atelier/logo_ajuste.svg) center/60% no-repeat #37393A;
+    border: clamp(2px, 0.5vw, 5px) solid #FAF2E7;
+}
+
+#atelier .paleta1{
+    background-color: #A57F60;
+}
+
+#atelier .paleta2{
+    background-color: #FAF2E7;
+}
+
+#atelier .paleta3{
+    background-color: #37393A;
+    border: clamp(2px, 0.5vw, 5px) solid #FAF2E7;
+}
+
+#atelier .paleta4{
+    background-color: #62A87C;
+}
+
+#atelier .paleta5{
+    background-color: #995FA3;
+}
+
+#atelier .largo1{
+    background: url(img/Contenido/identidad/Atelier/atelier_tipogafias.svg) center/70% no-repeat #FCF8F8;
+}
+
+#atelier .medio1{
+    background: url(img/Contenido/identidad/Atelier/paratodomal.gif) no-repeat center center/cover #191716;
+    border: clamp(2px, 0.5vw, 5px) solid #FCF8F8;
+}
+
+#atelier .medio2{
+    background: url(img/Contenido/identidad/Atelier/sabado.gif) no-repeat center center/cover #FCF8F8;
+}
+
+#atelier .largo2{
+    background: url(img/Contenido/identidad/Atelier/croissants.gif) no-repeat center center/cover #FCF8F8;
+}
+
+#atelier .grande{
+    background: url(img/Contenido/identidad/Atelier/Mockup\ ajuste\ 1.jpg) no-repeat center center/cover #FCF8F8;
+}
+
+
+
+#lacertilia .principal1{
+    background: url(img/Contenido/identidad/Lacertilia/simbolo.svg) center/30% no-repeat,
+    url(img/Contenido/identidad/Lacertilia/fondo_verde_lacertilia.jpg) center/cover no-repeat;
+}
+
+#lacertilia .principal2{
+    background: url(img/Contenido/identidad/Lacertilia/logotipo.svg) center/65% no-repeat,
+    url(img/Contenido/identidad/Lacertilia/fondo_naranja_lacertilia.jpg) center/cover no-repeat;
+}
+
+#lacertilia .paleta1{
+    background-color: #004A26;
+}
+
+#lacertilia .paleta2{
+    background-color: #EF8118;
+}
+
+#lacertilia .paleta3{
+    background-color: #F7F7F2;
+}
+
+#lacertilia .paleta4{
+    background-color: #6499CC;
+}
+
+#lacertilia .paleta5{
+    background-color: #2D50A1;
+}
+
+#lacertilia .largo1{
+    background: url(img/Contenido/identidad/Lacertilia/lacertilia_tipografias.svg) center/65% no-repeat,
+    url(img/Contenido/identidad/Lacertilia/fondo_blanco_lacertilia.jpg) center/cover no-repeat;
+}
+
+#lacertilia .medio1{
+    background: url(img/Contenido/identidad/Lacertilia/lacertilia_iconos.svg) center/65% no-repeat #2F2C2D;
+    border: clamp(2px, 0.5vw, 5px) solid #F7F7F2;
+}
+
+#lacertilia .medio2{
+    background: url(img/Contenido/identidad/Lacertilia/gif_iconos_lacertilia.gif) no-repeat center center/cover #FCF8F8;
+}
+
+#lacertilia .medio3{
+    background: url(img/Contenido/identidad/Lacertilia/taza_lacertilia.jpg) no-repeat center center/cover #2F2C2D;
+}
+
+#lacertilia .medio4{
+    background: url(img/Contenido/identidad/Lacertilia/tote_lacertilia.jpg) no-repeat center center/cover #FCF8F8;
+}
+
+#lacertilia .largo2{
+    background: url(img/Contenido/identidad/Atelier/croissants.gif) no-repeat center center/cover #FCF8F8;
+}
+
+#lacertilia .largo2{
+    background: url(img/Contenido/identidad/Lacertilia/lacertilia_patron.svg) center/110% no-repeat #004A26;
+}
+
+
+
+
+
+
+
+footer{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #startbutton{
+    transform: rotate(180deg);
 }

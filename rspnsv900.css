@@ -330,12 +330,12 @@
     }
     
     .contenidogrid .medio2{
-        grid-column: span 3;
+        grid-column: span 6;
         grid-row: span 3;
     }
     
     .contenidogrid .medio3{
-        grid-column: span 3;
+        grid-column: span 6;
         grid-row: span 3;
     }
     
