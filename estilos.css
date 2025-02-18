@@ -9,9 +9,6 @@ body {
     background-color: #071013;
 }
 
-#paginainicial{
-    overflow: hidden;
-}
 
 h1, h2, h3, h4, p{
     font-family: "Kanit", serif;
@@ -31,6 +28,10 @@ h2{
 
 h3{
     font-size: 1.8em;
+}
+
+#paginainicial{
+    overflow: hidden;
 }
 
 #portada1{
