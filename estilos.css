@@ -597,7 +597,13 @@ body .contenidogrid{
 .contenidogrid div{
     box-sizing: border-box;
     border-radius: 2em;
+    transition: all 0.5s ease;
 }
+
+.contenidogrid div:hover{
+    transform: scale(103%);
+}
+
 
 .contenidogrid .principal1{
     grid-column: span 5;
@@ -899,6 +905,109 @@ body .contenidogrid{
 #lacertilia .largo2{
     background: url(img/Contenido/identidad/Lacertilia/lacertilia_patron.svg) center/110% no-repeat #004A26;
 }
+
+
+
+#cubyka .largo1{
+    background: url(img/Contenido/Cubyka/cubyka.svg) center/75% no-repeat #FFFBFF;
+}
+
+#cubyka .medio1{
+    background: url(img/Contenido/Cubyka/tabulares.gif) no-repeat center center/cover #FFFBFF;
+}
+
+#cubyka .medio2{
+    background: url(img/Contenido/Cubyka/regular_condensed.svg) center/80% no-repeat #FFFBFF;
+}
+
+#cubyka .largo2{
+    background: url(img/Contenido/Cubyka/versalitas.svg) center/100% no-repeat #071013;
+    border: clamp(2px, 0.5vw, 5px) solid #F23D3D;
+}
+
+
+#cubyka .principal1{
+    background: url(img/Contenido/Cubyka/proceso\ 1.jpg) no-repeat center center/cover #FFFBFF;
+}
+
+#cubyka .principal2{
+    background: url(img/Contenido/Cubyka/proceso\ 2.jpg) no-repeat center center/cover #FFFBFF;
+}
+
+#cubyka .largo2:nth-child(8){
+    background: url(img/Contenido/Cubyka/cubyka_evolucion.gif) no-repeat center center/cover #FFFBFF;
+}
+
+
+#cubyka .medio3{
+    background: url(img/Contenido/Cubyka/a_blanca.svg) no-repeat center center/cover #191716;
+}
+
+#cubyka .medio4{
+    background: url(img/Contenido/Cubyka/x_blanca.svg) no-repeat center center/cover #191716;
+}
+
+#cubyka .medio3:hover{
+    background: url(img/Contenido/Cubyka/a_negra.svg) no-repeat center center/cover #191716;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
+}
+
+#cubyka .medio4:hover{
+    background: url(img/Contenido/Cubyka/x_negra.svg) no-repeat center center/cover #191716;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
+}
+
+
+
+#cubyka .grande{
+    background: url(img/Contenido/Cubyka/tipografia_completa.svg) center/80% no-repeat #191716;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
+}
+
+#cubyka .grande:nth-child(12){
+    background: url(img/Contenido/Cubyka/cubyka_poster\ 1.jpg) no-repeat center center/cover #191716;
+}
+
+
+
+#catalogo .principal1{
+    background: url(img/Contenido/editorial/Catalogo/foto.jpg) no-repeat center center/cover #FFFBFF;
+}
+
+#catalogo .principal2{
+    background: url(img/Contenido/editorial/Catalogo/catalogo_portada\ 2.jpg) no-repeat center center/cover #191716;
+}
+
+#catalogo .largo1{
+    background: url(img/Contenido/editorial/Catalogo/tipografia_catalogo.svg) center/65% no-repeat,
+    url(img/Contenido/editorial/Catalogo/catalogo_textura\ 1.jpg) center/cover no-repeat;
+}
+
+#catalogo .medio1{
+    background: url(img/Contenido/editorial/Catalogo/paxinlucem.jpg) no-repeat center center/cover #FCF8F8;
+}
+
+#catalogo .medio2{
+    background: url(img/Contenido/editorial/Catalogo/catalogo_mockup1.jpg) no-repeat center center/cover #FCF8F8;
+}
+
+#catalogo .medio3{
+    background: url(img/Contenido/editorial/Catalogo/indesign_catalogo.jpg) no-repeat center center/cover #191716;
+}
+
+#catalogo .medio4{
+    background: url(img/Contenido/editorial/Catalogo/indice.svg) center/75% no-repeat,
+    url(img/Contenido/editorial/Catalogo/catalogo_textura\ 1.jpg) center/cover no-repeat;
+}
+
+#catalogo .largo2{
+    background: url(img/Contenido/editorial/Catalogo/paxinlucem_reconstruido.jpg) no-repeat center center/cover #FCF8F8;
+}
+
+#catalogo .grande{
+    background: url(img/Contenido/editorial/Catalogo/catalogo_mockup2.jpg) no-repeat center center/cover #FCF8F8;
+}
+
 
 
 
