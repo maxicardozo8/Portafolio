@@ -30,6 +30,11 @@ h3{
     font-size: 1.8em;
 }
 
+.separador{
+    display: block;
+    height: 50px;
+}
+
 #paginainicial{
     overflow: hidden;
 }
