@@ -1109,11 +1109,13 @@ body .contenidogrid{
 }
 
 #pretext .medio3:nth-child(15){
-    background: url(img/Contenido/editorial/Pretext/tabla1.svg) center/90% no-repeat #191716;
+    background: url(img/Contenido/editorial/Pretext/tabla1.svg) center/90% no-repeat #071013;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
 
 #pretext .medio4:nth-child(16){
-    background: url(img/Contenido/editorial/Pretext/tabla2.svg) center/90% no-repeat #191716;
+    background: url(img/Contenido/editorial/Pretext/tabla2.svg) center/90% no-repeat #071013;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
 
 #pretext .largo2:nth-child(17){
@@ -1315,6 +1317,80 @@ body .contenidogrid{
     left: 0;
 }
 
+
+#monografia .principal1{
+    background: url(img/Contenido/Monografia/Pionera\ 1.jpg) no-repeat center right/cover #E6E8E6;
+}
+
+#monografia .principal2{
+    background: url(img/Contenido/Monografia/panel\ de\ control.jpg) center/70% no-repeat #191716;
+    border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
+}
+
+#monografia .paleta1{
+    background-color: #E6E8E6;
+}
+
+#monografia .paleta2{
+    background-color: #C4C4C4;
+}
+
+#monografia .paleta3{
+    background-color: #000501;
+    border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
+}
+
+#monografia .paleta4{
+    background-color: #020887;
+    border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
+}
+
+#monografia .paleta5{
+    background-color: #F7E05D;
+}
+
+#monografia .largo1{
+    background: url(img/Contenido/Monografia/tipografias_monografia.svg) center/70% no-repeat #C4C4C4;
+}
+
+#monografia .medio1{
+    background: url(img/Contenido/Monografia/Iconos.svg) center/70% no-repeat #191716;
+    border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
+}
+
+#monografia .medio2{
+    background: url(img/Contenido/Monografia/Apple.svg) center/10% no-repeat #191716;
+    border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
+}
+
+#monografia .medio3{
+    background: url(img/Contenido/Monografia/bocetos1.jpg) no-repeat center center/cover #191716;
+}
+
+#monografia .medio4{
+    background: url(img/Contenido/Monografia/bocetos\ 2.jpg) no-repeat center center/cover #191716;
+}
+
+#monografia .largo2{
+    background: url(img/Contenido/Monografia/Susan\ Kare.svg) center/70% no-repeat #191716;
+    border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
+}
+
+#monografia .grande{
+    background-color: #E6E8E6;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#monografia .grande video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 
