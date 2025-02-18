@@ -1394,6 +1394,77 @@ body .contenidogrid{
 
 
 
+#nyc .largo1{
+    background: url(img/Contenido/composicion/Sellos/mesa_sellos.jpg) no-repeat center center/cover #191716;
+}
+
+#nyc .principal1{
+    background: url(img/Contenido/composicion/Sellos/Sello1.JPG) no-repeat center center/cover #191716;
+}
+
+#nyc .principal2{
+    background: url(img/Contenido/composicion/Sellos/Sello2.JPG) no-repeat center center/cover #191716;
+}
+
+#nyc .grande{
+    background: url(img/Contenido/composicion/Sellos/NYC-gif.gif) no-repeat center center/cover #191716;
+}
+
+
+
+#mapa .principal1{
+    background: url(img/Contenido/composicion/Mapa/proceso1.JPG) no-repeat center center/cover #191716;
+}
+
+#mapa .principal2{
+    background: url(img/Contenido/composicion/Mapa/proceso2.JPG) no-repeat center center/cover #191716;
+}
+
+#mapa .paleta1{
+    background-color: #E8D100;
+}
+
+#mapa .paleta2{
+    background-color: #F17028;
+}
+
+#mapa .paleta3{
+    background-color: #E41F34;
+}
+
+#mapa .paleta4{
+    background-color: #0079BB;
+}
+
+#mapa .paleta5{
+    background-color: #73B34A;
+}
+
+#mapa .medio1{
+    background-color: #E6E8E6;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#mapa .medio1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#mapa .medio2{
+    background: url(img/Contenido/composicion/Mapa/boceto.JPG) no-repeat center center/cover #191716;
+}
+
+#mapa .grande{
+    background: url(img/Contenido/composicion/Mapa/mapa.svg) center/50% no-repeat #071013;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
+}
+
 
 
 footer{
