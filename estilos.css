@@ -1011,6 +1011,129 @@ body .contenidogrid{
 
 
 
+#dictadura .principal1{
+    background: url(img/Contenido/editorial/Dictadura/dictadura_mockup1.jpg) no-repeat center center/cover #FFFBFF;
+}
+
+#dictadura .principal2{
+    background: url(img/Contenido/editorial/Dictadura/dictadura_mockup2.jpg) no-repeat center center/cover #191716;
+}
+
+#dictadura .largo1{
+    background: url(img/Contenido/editorial/Dictadura/titulo.svg) center/80% no-repeat #FFFBFF;
+}
+
+#dictadura .medio1{
+    background: url(img/Contenido/editorial/Dictadura/portada.svg) center/100% no-repeat #FFFBFF;
+}
+
+#dictadura .medio2{
+    background: url(img/Contenido/editorial/Dictadura/tipografia_dictadura.svg) center/70% no-repeat #FFFBFF;
+}
+
+#dictadura .medio3{
+    background: url(img/Contenido/editorial/Dictadura/indesign_dictadura.jpg) no-repeat center center/cover #191716;
+}
+
+#dictadura .medio4{
+    background: url(img/Contenido/editorial/Dictadura/jerarquias.svg) center/85% no-repeat #FFFBFF;
+}
+
+
+
+#pretext .principal1{
+    background: url(img/Contenido/editorial/Pretext/pretext.svg) center/80% no-repeat #FFFBFF;
+}
+
+#pretext .principal2{
+    background: url(img/Contenido/editorial/Pretext/pretext_mockup1.jpg) no-repeat center center/cover #191716;
+}
+
+#pretext .medio1{
+    background: url(img/Contenido/editorial/Pretext/pretext_cascos.svg) center/75% no-repeat,
+    url(img/Contenido/editorial/Pretext/fibra_de_carbono.jpg) center/cover no-repeat;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
+}
+
+#pretext .medio2{
+    background: url(img/Contenido/editorial/Pretext/e2024.svg) center/40% no-repeat,
+    url(img/Contenido/editorial/Pretext/fibra_de_carbono.jpg) center/cover no-repeat;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
+}
+
+#pretext .paleta1{
+    background-color: #E30613;
+}
+
+#pretext .paleta2{
+    background-color: #552581;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
+}
+
+#pretext .paleta3{
+    background-color: #FADE41;
+}
+
+#pretext .paleta4{
+    background-color: #006342;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
+}
+
+#pretext .paleta5{
+    background-color: #FF7F11;
+}
+
+#pretext .largo1{
+    background: url(img/Contenido/editorial/Pretext/tipografias_revista.svg) center/75% no-repeat #071013;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
+}
+
+
+
+#pretext .medio3{
+    background: url(img/Contenido/editorial/Pretext/revista_procesos_1.JPG) no-repeat center center/cover #191716;
+}
+
+#pretext .medio4{
+    background: url(img/Contenido/editorial/Pretext/indesign_revista.jpg) no-repeat center center/cover #FCF8F8;
+}
+
+#pretext .largo2{
+    background: url(img/Contenido/editorial/Pretext/infografia.svg) center/80% no-repeat #071013;
+    border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
+}
+
+#pretext .medio3:nth-child(15){
+    background: url(img/Contenido/editorial/Pretext/tabla1.svg) center/90% no-repeat #191716;
+}
+
+#pretext .medio4:nth-child(16){
+    background: url(img/Contenido/editorial/Pretext/tabla2.svg) center/90% no-repeat #191716;
+}
+
+#pretext .largo2:nth-child(17){
+    background: url(img/Contenido/editorial/Pretext/lanzado.jpg) no-repeat center center/cover #071013;
+    border: none;
+}
+
+#pretext .grande{
+    background-color: #071013;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#pretext .grande video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 
 
