@@ -685,6 +685,7 @@ body .contenidogrid{
     grid-column: span 10;
     grid-row: span 1;
     align-self: end;
+    pointer-events: none;
 }
 .contenidogrid .aclaracion div{
     display: flex;
