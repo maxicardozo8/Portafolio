@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 h1, h2, h3, h4, p{
-    font-family: "Kanit", serif;
+    font-family: "Kanit", sans-serif;
     color: #FFFBFF;
     line-height: 1;
 }
@@ -723,9 +723,6 @@ body .contenidogrid{
 }
 #lacertilia .medio4{
     background: url(img/Contenido/identidad/Lacertilia/tote_lacertilia.jpg) no-repeat center center/cover #FCF8F8;
-}
-#lacertilia .largo2{
-    background: url(img/Contenido/identidad/Atelier/croissants.gif) no-repeat center center/cover #FCF8F8;
 }
 #lacertilia .largo2{
     background: url(img/Contenido/identidad/Lacertilia/lacertilia_patron.svg) center/110% no-repeat #004A26;
