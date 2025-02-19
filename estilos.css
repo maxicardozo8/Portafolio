@@ -1,31 +1,29 @@
-* {
+/*GENERALIDADES*/
+*{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     
 }
-
 body {
     background-color: #071013;
 }
-
-
+a{
+    text-decoration: none;
+}
 h1, h2, h3, h4, p{
     font-family: "Kanit", serif;
     color: #FFFBFF;
     line-height: 1;
 }
-
 h1{
     font-size: 4em;
     z-index: 1;
 }
-
 h2{
     font-size: 2.5em;
     font-weight: 400;
 }
-
 h3{
     font-size: 1.8em;
 }
@@ -35,19 +33,17 @@ h3{
     height: 50px;
 }
 
+/*PANTALLA INICIAL PRESENTACION*/
 #paginainicial{
     overflow: hidden;
 }
-
 #portada1{
     position: relative;
 }
-
 #portada1 div{
     display: flex;
     padding: 3.5em 0;
 }
-
 #portada1 div div{
     display: flex;
     flex-direction: column;
@@ -55,19 +51,15 @@ h3{
     padding-left: 5%;
     min-width: 310px;
 }
-
 #portada1 div img{
     width: 380px;
     z-index: 1;
 }
-
-
 #portada1 div div h2:nth-child(1){
     color: #F29422;
     font-weight: 700;
     padding-bottom: 5%;
 }
-
 #portada1 span{
     display: block;
     background-color: #353535;
@@ -78,60 +70,34 @@ h3{
     border-radius: 20%;
     transition: all 0.5s ease;
 }
-
-
-
 #portada1 span:nth-child(4){
     left: 10%;
     bottom: 1%;
 }
-
-
 #portada1 span:nth-child(5){
     right: 12%;
     bottom: 10%;
 }
-
 #portada1 span:nth-child(6){
     left: 3%;
     top: 20%;
 }
-
 #portada1 span:nth-child(7){
     right: 8%;
     top: 10%;
 }
-
 #portada1 span:nth-child(8){
     left: 25%;
     top: -7%;
 }
-
 #portada1 span:hover{
     transform: scale(120%);
 }
-
-#portada1 span:nth-child(4):hover{
-    background-color: #03A63C;  
-}
-
-#portada1 span:nth-child(5):hover{
-    background-color: #F2E30C;
-}
-
-#portada1 span:nth-child(6):hover{
-    background-color: #F23D3D;
-}
-
-#portada1 span:nth-child(7):hover{
-    background-color: #FFFBFF;
-}
-
-#portada1 span:nth-child(8):hover{
-    background-color: #0D3B66;
-}
-
-
+#portada1 span:nth-child(4):hover{ background-color: #03A63C; }
+#portada1 span:nth-child(5):hover{ background-color: #F2E30C; }
+#portada1 span:nth-child(6):hover{ background-color: #F23D3D; }
+#portada1 span:nth-child(7):hover{ background-color: #FFFBFF; }
+#portada1 span:nth-child(8):hover{ background-color: #0D3B66; }
 #startbutton{
     display: block;
     border-radius: 20%;
@@ -140,8 +106,8 @@ h3{
     aspect-ratio: 1 / 1;
     background-color: #F29422;
     position: relative;
+    transition: all 0.5s ease;
 }
-
 #startbutton img{
     position: absolute;
     top: 50%;
@@ -149,6 +115,7 @@ h3{
     transform: translate(-50%, -50%);
 }
 
+/*SEGUNDA PANTALLA INDICE*/
 #indice div a{
     border-radius: 20%;
     display: block;
@@ -163,50 +130,22 @@ h3{
     pointer-events: none;
     transition: all 0.5s ease;
 }
-
 #indice div a:hover{
     width: 10%;
     height: 10%;
 }
-
 #indice div a path{
     padding: 10%;
     display: block;
 }
-
-
-#amarillo a path{
-    fill: #F2E30C;
-}
-
-#rojo a path{
-    fill: #F23D3D;
-}
-
-#naranja a path{
-    fill: #F29422;
-}
-
-#azul a path{
-    fill: #0D3B66;
-}
-
-#blanco a path{
-    fill: #FFFBFF;
-}
-
-#verde a path{
-    fill: #03A63C;
-}
-
-.boton_negro{
-    background-color: #071013;
-}
-
-.boton_blanco{
-    background-color: #FFFBFF;
-}
-
+#amarillo a path{ fill: #F2E30C; }
+#rojo a path{ fill: #F23D3D; }
+#naranja a path{ fill: #F29422; }
+#azul a path{ fill: #0D3B66; }
+#blanco a path{ fill: #FFFBFF; }
+#verde a path{ fill: #03A63C; }
+.boton_negro{ background-color: #071013; }
+.boton_blanco{ background-color: #FFFBFF; }
 #portada2,
 #portada1 {
     display: flex;
@@ -215,8 +154,6 @@ h3{
     height: 100vh;
     flex-direction: column;
 }
-
-
 #indice {
     display: grid;
     gap: 1.5vw;
@@ -226,8 +163,6 @@ h3{
     grid-template-rows: repeat(6, 1fr);
     position: relative;
 }
-
-
 body #portada2 #indice div {
     border-radius: 20%;
     overflow: hidden;
@@ -238,7 +173,20 @@ body #portada2 #indice div {
     position: relative;
     z-index: 1;  
 }
-
+#indice div h3{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transition: all 0.5s ease;
+}
+#indice div img{
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    transition: all 0.5s ease;
+    transition-delay: 0.1s;
+    visibility: hidden;
+}
 #amarillo {
     background-color: #F2E30C;
     grid-column: 2 / 4;
@@ -269,29 +217,8 @@ body #portada2 #indice div {
     grid-column: 6 / 8;
     grid-row: 4 / 6;
 }
-
 .letranegra{ 
     color: #071013!important; 
-}
-
-#indice div{
-    position: relative;
-}
-
-#indice div h3{
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    transition: all 0.5s ease;
-}
-
-#indice div img{
-    width: 15%;
-    height: 15%;
-    position: absolute;
-    transition: all 0.5s ease;
-    transition-delay: 0.1s;
-    visibility: hidden;
 }
 
 #amarillo img:nth-child(2),
@@ -324,8 +251,7 @@ body #portada2 #indice div {
     bottom: -5%;
 }
 
-
-/* PARA QUE SE AGRANDEN CAUNDO HACER HOVER */
+/* PARA QUE SE AGRANDEN AL HACER HOVER */
 #indice:has(#amarillo:hover) #amarillo,
 #indice:has(#rojo:hover) #rojo,
 #indice:has(#naranja:hover) #naranja,
@@ -336,7 +262,7 @@ body #portada2 #indice div {
     z-index: 10; 
 }
 
-/* PARA QUE SE ACOMODEN CUANDO HACER HOVER */
+/* PARA QUE SE ACOMODEN AL HACER HOVER */
 #indice:has(#amarillo:hover) #amarillo h3,
 #indice:has(#rojo:hover) #rojo h3,
 #indice:has(#naranja:hover) #naranja h3,
@@ -348,7 +274,7 @@ body #portada2 #indice div {
     transform: scale(50%);
 }
 
-/* PARA QUE APAREZCAN CUANDO HACER HOVER */
+/* PARA QUE APAREZCAN AL HACER HOVER */
 #indice:has(#amarillo:hover) #amarillo img:nth-child(2),
 #indice:has(#rojo:hover) #rojo img:nth-child(2),
 #indice:has(#naranja:hover) #naranja img:nth-child(2),
@@ -359,7 +285,6 @@ body #portada2 #indice div {
     right: 15%;
     top: 12%;
 }
-
 #indice:has(#amarillo:hover) #amarillo img:nth-child(3),
 #indice:has(#rojo:hover) #rojo img:nth-child(3),
 #indice:has(#naranja:hover) #naranja img:nth-child(3),
@@ -370,7 +295,6 @@ body #portada2 #indice div {
     right: 15%;
     bottom: 15%;
 }
-
 #indice:has(#amarillo:hover) #amarillo img:nth-child(4),
 #indice:has(#rojo:hover) #rojo img:nth-child(4),
 #indice:has(#naranja:hover) #naranja img:nth-child(4),
@@ -381,8 +305,6 @@ body #portada2 #indice div {
     bottom: 15%;
     left: 15%;
 }
-
-
 #indice:has(#amarillo:hover) #amarillo a,
 #indice:has(#rojo:hover) #rojo a,
 #indice:has(#naranja:hover) #naranja a,
@@ -394,8 +316,7 @@ body #portada2 #indice div {
     pointer-events: all;
 }
 
-
-/* AMARILLO */
+/* IDENTIDAD */
 #indice:has(#amarillo:hover) #rojo,
 #indice:has(#amarillo:hover) #naranja {
     transform: translate(50%, 0%); 
@@ -405,7 +326,7 @@ body #portada2 #indice div {
     transform: translate(0%, 50%); 
 }
 
-/* ROJO */
+/* TIPOGRAFIA */
 #indice:has(#rojo:hover) #amarillo {
     transform: translate(-50%, 0%); 
 }
@@ -422,7 +343,7 @@ body #portada2 #indice div {
     transform: translate(50%, 50%);
 }
 
-/* NARANJA */
+/* EDITORIAL */
 #indice:has(#naranja:hover) #rojo,
 #indice:has(#naranja:hover) #amarillo {
     transform: translate(-50%, 0%); 
@@ -432,7 +353,7 @@ body #portada2 #indice div {
     transform: translate(0%, 50%); 
 }
 
-/* AZUL */
+/* INTERFACES */
 #indice:has(#azul:hover) #rojo,
 #indice:has(#azul:hover) #amarillo {
     transform: translate(0%, -50%); 
@@ -442,7 +363,7 @@ body #portada2 #indice div {
     transform: translate(50%, 0%); 
 }
 
-/* BLANCO */
+/* INVESTIGACION */
 #indice:has(#blanco:hover) #amarillo {
     transform: translate(-50%, 0%); 
 }
@@ -459,7 +380,7 @@ body #portada2 #indice div {
     transform: translate(50%, 50%);
 }
 
-/* VERDE */
+/* COMPOSICION */
 #indice:has(#verde:hover) #rojo,
 #indice:has(#verde:hover) #naranja {
     transform: translate(0%, -50%); 
@@ -469,6 +390,7 @@ body #portada2 #indice div {
     transform: translate(-50%, 0%); 
 }
 
+/* NAV BAR */
 nav {
     display: flex;
     align-items: center;
@@ -481,25 +403,30 @@ nav {
     padding: 1% 0;
     position: relative;
 }
-
+nav #startbutton:hover{
+    transform: scale(120%);
+}
 nav a{
     text-decoration: none;
 }
-
+#casita{
+    width: 25px;
+    fill: #FFFBFF;
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%);
+}
+#casita:hover{
+    transform: scale(120%) translate(-50%, -50%);
+}
 nav #casita {
     position: absolute;
-    transform: translate(-50%, -50%);
-    fill: #FFFBFF;
     left: -50px;
     top: 50%;
-    width: 25px;
     z-index: 10;
 }
-
 #menu {
     display: none;
 }
-
 input[type="checkbox"] {
     appearance: none; /* Elimina el estilo predeterminado */
     -webkit-appearance: none;
@@ -512,13 +439,6 @@ input[type="checkbox"] {
     outline: none;
     position: absolute; /* Lo saca del flujo pero sigue interactuable si se usa un label */
   }
-
-
-
-nav #casita:hover{
-    fill: #353535;
-}
-
 nav div {
     display: flex;
     align-items: center;
@@ -527,7 +447,6 @@ nav div {
     max-width: 20px; /* Inicialmente solo el tamaño del cuadradito */
     transition: max-width 1s ease, gap 1s ease, margin-left 1s ease;
 }
-
 nav h4 {
     transform: translateX(-150%);
     transition: transform 1s ease;
@@ -535,61 +454,48 @@ nav h4 {
     white-space: nowrap;
     overflow: hidden;
 }
-
 .activo{
     pointer-events: none;
 }
-
 .activo h4{
     transform: translateX(0%);
     color: #353535;
 }
-
 nav .activo div{
     max-width: 300px;
     gap: 10px;
 }
-
 nav .cuadradito {
     position: relative;
     z-index: 1;
 }
-
 nav #redes{
     margin-left: auto;
     display: flex;
     gap: 20px;
     max-width: 300px;
 }
-
-
 nav #redes a div .negro{
     display: flex;
 } 
-
 nav #redes a div .negro img{
     width: 20px;
 } 
-
-
-/* Expansión progresiva del div al hacer hover */
+/*Expansión progresiva del div al hacer hover*/
 nav div:hover {
-    max-width: 300px; /* Suficientemente grande para acomodar el contenido */
+    max-width: 300px;
     gap: 10px;
 }
-
-/* Mostrar el texto de forma progresiva */
+/*Mostrar el texto de forma progresiva*/
 nav div:hover h4 {
     transform: translateX(0%);
 }
-
-/* Desplazar suavemente los elementos inferiores */
+/*Desplazar suavemente los elementos inferiores*/
 nav div:hover ~ div {
     margin-left: 10px;
 }
 
-
-
+/*GRILLA CON PROYECTOS*/
 body .contenidogrid{
     margin: 0 auto;
     width: 80%;
@@ -599,93 +505,74 @@ body .contenidogrid{
     grid-auto-rows: 130px;
     max-width: 1600px;
 }
-
 .contenidogrid div{
     box-sizing: border-box;
     border-radius: 2em;
     transition: all 0.5s ease;
 }
-
 .contenidogrid div:hover{
     transform: scale(103%);
 }
-
-
 .contenidogrid .cuadrado{
     grid-column: span 5;
     grid-row: span 5;
 }
-
 .contenidogrid .principal1{
     grid-column: span 5;
     grid-row: span 3;
 }
-
 .contenidogrid .principal2{
     grid-column: span 5;
     grid-row: span 3;
 }
-
 .contenidogrid .paleta1{
     grid-column: span 2;
     grid-row: span 1;
 }
-
 .contenidogrid .paleta2{
     grid-column: span 2;
     grid-row: span 1;
 }
-
 .contenidogrid .paleta3{
     grid-column: span 2;
     grid-row: span 1;
 }
-
 .contenidogrid .paleta4{
     grid-column: span 2;
     grid-row: span 1;
 }
-
 .contenidogrid .paleta5{
     grid-column: span 2;
     grid-row: span 1;
 }
-
 .contenidogrid .largo1{
     grid-column: span 10;
     grid-row: span 2;
 }
-
 .contenidogrid .medio1{
     grid-column: span 6;
     grid-row: span 2;
 }
-
 .contenidogrid .medio2{
     grid-column: span 4;
     grid-row: span 2;
 }
-
 .contenidogrid .medio3{
     grid-column: span 5;
     grid-row: span 3;
 }
-
 .contenidogrid .medio4{
     grid-column: span 5;
     grid-row: span 3;
 }
-
 .contenidogrid .largo2{
     grid-column: span 10;
     grid-row: span 2;
 }
-
 .contenidogrid .grande{
     grid-column: span 10;
     grid-row: span 6;
 }
-
 .contenidogrid .aclaracion{
     display: flex;
     grid-column: span 10;
@@ -702,6 +589,8 @@ body .contenidogrid{
     padding-bottom: 0.3em;
     padding-left: 0.5em;
 }
+
+/*CUADRADITOS DE COLORES*/
 .cuadradito{
     display: block;
     width: 20px;
@@ -709,84 +598,52 @@ body .contenidogrid{
     border-radius: 0.3em;
     aspect-ratio: 1/1;
 }
-.identidad{
-    background-color: #F2E30C;
-}
-.tipografia{
-    background-color: #F23D3D;
-}
-.editorial{
-    background-color: #F29422;
-}
-.interfaces{
-    background-color: #0D3B66;
-}
-.investigacion{
-    background-color: #FFFBFF;
-}
-.composicion{
-    background-color: #03A63C;
-}
-.negro{
-    background-color: #071013;
-}
+.identidad{ background-color: #F2E30C; }
+.tipografia{ background-color: #F23D3D; }
+.editorial{ background-color: #F29422; }
+.interfaces{ background-color: #0D3B66; }
+.investigacion{ background-color: #FFFBFF; }
+.composicion{ background-color: #03A63C; }
+.negro{ background-color: #071013; }
 
+/*IDENTIDAD AGUSTINA CARDOZO*/
 #Agus .principal1{
     background: url(img/Contenido/identidad/Agus/SimboloAgus.svg) center/40% no-repeat #9C61CF;
 }
-
 #Agus .principal2{
     background: url(img/Contenido/identidad/Agus/LogotipoAgus.svg) center/70% no-repeat #191716;
     border: clamp(2px, 0.5vw, 5px) solid #FCF8F8;
 }
-
-#Agus .paleta1{
-    background-color: #FFDE5B;
-}
-
-#Agus .paleta2{
-    background-color: #9C61CF;
-}
-
-#Agus .paleta3{
-    background-color: #FFDDE1;
-}
-
+#Agus .paleta1{ background-color: #FFDE5B; }
+#Agus .paleta2{ background-color: #9C61CF; }
+#Agus .paleta3{ background-color: #FFDDE1; }
 #Agus .paleta4{
     background-color: #191716;
     border: clamp(2px, 0.5vw, 5px) solid #FCF8F8;
 }
-
 #Agus .paleta5{
     background-color: #253B10;
     border: clamp(2px, 0.5vw, 5px) solid #FCF8F8;
 }
-
 #Agus .largo1{
     background: url(img/Contenido/identidad/Agus/TipografiaAgus.svg) center/70% no-repeat #FCF8F8;
 }
-
 #Agus .medio1{
     background: url(img/Contenido/identidad/Agus/MacBook_Dresser_Mockup_1\ 1.jpg) no-repeat center center/cover #FCF8F8;
 }
-
 #Agus .medio2{
     background: url(img/Contenido/identidad/Agus/ConstruccionLogoAgus.gif) no-repeat center center/cover #FCF8F8;
 }
-
 #Agus .medio3{
     background: url(img/Contenido/identidad/Agus/LinkedinAgus.png) no-repeat center center/cover #191716;
     border: clamp(2px, 0.5vw, 5px) solid #FCF8F8;
 }
-
 #Agus .medio4{
     background: url(img/Contenido/identidad/Agus/IMG_4193.JPG) no-repeat center center/cover #FCF8F8;
 }
-
 #Agus .largo2{
     background: url(img/Contenido/identidad/Agus/PatronAgus.svg) no-repeat center center/cover #FCF8F8;
 }
-
 #Agus .grande{
     background-color: #9C61CF;
     width: 100%;
@@ -803,333 +660,230 @@ body .contenidogrid{
     left: 0;
 }
 
-
-
+/*REDISEÑO ATELIER*/
 #atelier .principal1{
     background: url(img/Contenido/identidad/Atelier/logo_anterior.svg) center/60% no-repeat #FFFFFF;
 }
-
 #atelier .principal2{
     background: url(img/Contenido/identidad/Atelier/logo_ajuste.svg) center/60% no-repeat #37393A;
     border: clamp(2px, 0.5vw, 5px) solid #FAF2E7;
 }
-
-#atelier .paleta1{
-    background-color: #A57F60;
-}
-
-#atelier .paleta2{
-    background-color: #FAF2E7;
-}
-
+#atelier .paleta1{ background-color: #A57F60; }
+#atelier .paleta2{ background-color: #FAF2E7; }
 #atelier .paleta3{
     background-color: #37393A;
     border: clamp(2px, 0.5vw, 5px) solid #FAF2E7;
 }
-
-#atelier .paleta4{
-    background-color: #62A87C;
-}
-
-#atelier .paleta5{
-    background-color: #995FA3;
-}
-
+#atelier .paleta4{ background-color: #62A87C; }
+#atelier .paleta5{ background-color: #995FA3; }
 #atelier .largo1{
     background: url(img/Contenido/identidad/Atelier/atelier_tipogafias.svg) center/70% no-repeat #FCF8F8;
 }
-
 #atelier .medio1{
     background: url(img/Contenido/identidad/Atelier/paratodomal.gif) no-repeat center center/cover #191716;
     border: clamp(2px, 0.5vw, 5px) solid #FCF8F8;
 }
-
 #atelier .medio2{
     background: url(img/Contenido/identidad/Atelier/sabado.gif) no-repeat center center/cover #FCF8F8;
 }
-
 #atelier .largo2{
     background: url(img/Contenido/identidad/Atelier/croissants.gif) no-repeat center center/cover #FCF8F8;
 }
-
 #atelier .grande{
     background: url(img/Contenido/identidad/Atelier/Mockup\ ajuste\ 1.jpg) no-repeat center center/cover #FCF8F8;
 }
 
-
-
+/*IDENTIDAD LACERTILIA*/
 #lacertilia .principal1{
     background: url(img/Contenido/identidad/Lacertilia/simbolo.svg) center/30% no-repeat,
     url(img/Contenido/identidad/Lacertilia/fondo_verde_lacertilia.jpg) center/cover no-repeat;
 }
-
 #lacertilia .principal2{
     background: url(img/Contenido/identidad/Lacertilia/logotipo.svg) center/65% no-repeat,
     url(img/Contenido/identidad/Lacertilia/fondo_naranja_lacertilia.jpg) center/cover no-repeat;
 }
-
-#lacertilia .paleta1{
-    background-color: #004A26;
-}
-
-#lacertilia .paleta2{
-    background-color: #EF8118;
-}
-
-#lacertilia .paleta3{
-    background-color: #F7F7F2;
-}
-
-#lacertilia .paleta4{
-    background-color: #6499CC;
-}
-
-#lacertilia .paleta5{
-    background-color: #2D50A1;
-}
-
+#lacertilia .paleta1{ background-color: #004A26; }
+#lacertilia .paleta2{ background-color: #EF8118; }
+#lacertilia .paleta3{ background-color: #F7F7F2; }
+#lacertilia .paleta4{ background-color: #6499CC; }
+#lacertilia .paleta5{ background-color: #2D50A1; }
 #lacertilia .largo1{
     background: url(img/Contenido/identidad/Lacertilia/lacertilia_tipografias.svg) center/65% no-repeat,
     url(img/Contenido/identidad/Lacertilia/fondo_blanco_lacertilia.jpg) center/cover no-repeat;
 }
-
 #lacertilia .medio1{
-    background: url(img/Contenido/identidad/Lacertilia/lacertilia_iconos.svg) center/65% no-repeat #2F2C2D;
+    background: url(img/Contenido/identidad/Lacertilia/lacertilia_iconos.svg) center/80% no-repeat #2F2C2D;
     border: clamp(2px, 0.5vw, 5px) solid #F7F7F2;
 }
-
 #lacertilia .medio2{
     background: url(img/Contenido/identidad/Lacertilia/gif_iconos_lacertilia.gif) no-repeat center center/cover #FCF8F8;
 }
-
 #lacertilia .medio3{
     background: url(img/Contenido/identidad/Lacertilia/taza_lacertilia.jpg) no-repeat center center/cover #2F2C2D;
 }
-
 #lacertilia .medio4{
     background: url(img/Contenido/identidad/Lacertilia/tote_lacertilia.jpg) no-repeat center center/cover #FCF8F8;
 }
-
 #lacertilia .largo2{
     background: url(img/Contenido/identidad/Atelier/croissants.gif) no-repeat center center/cover #FCF8F8;
 }
-
 #lacertilia .largo2{
     background: url(img/Contenido/identidad/Lacertilia/lacertilia_patron.svg) center/110% no-repeat #004A26;
 }
 
-
-
+/*TIPOGRAFIA CUBYKA*/
 #cubyka .largo1{
     background: url(img/Contenido/Cubyka/cubyka.svg) center/75% no-repeat #FFFBFF;
 }
-
 #cubyka .medio1{
     background: url(img/Contenido/Cubyka/tabulares.gif) no-repeat center center/cover #FFFBFF;
 }
-
 #cubyka .medio2{
     background: url(img/Contenido/Cubyka/regular_condensed.svg) center/80% no-repeat #FFFBFF;
 }
-
 #cubyka .largo2{
     background: url(img/Contenido/Cubyka/versalitas.svg) center/100% no-repeat #071013;
     border: clamp(2px, 0.5vw, 5px) solid #F23D3D;
 }
-
-
 #cubyka .principal1{
     background: url(img/Contenido/Cubyka/proceso\ 1.jpg) no-repeat center center/cover #FFFBFF;
 }
-
 #cubyka .principal2{
     background: url(img/Contenido/Cubyka/proceso\ 2.jpg) no-repeat center center/cover #FFFBFF;
 }
-
 #cubyka .largo2:nth-child(8){
     background: url(img/Contenido/Cubyka/cubyka_evolucion.gif) no-repeat center center/cover #FFFBFF;
 }
-
-
 #cubyka .medio3{
     background: url(img/Contenido/Cubyka/a_blanca.svg) no-repeat center center/cover #191716;
 }
-
 #cubyka .medio4{
     background: url(img/Contenido/Cubyka/x_blanca.svg) no-repeat center center/cover #191716;
 }
-
 #cubyka .medio3:hover{
     background: url(img/Contenido/Cubyka/a_negra.svg) no-repeat center center/cover #191716;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
 #cubyka .medio4:hover{
     background: url(img/Contenido/Cubyka/x_negra.svg) no-repeat center center/cover #191716;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
-
-
 #cubyka .grande{
     background: url(img/Contenido/Cubyka/tipografia_completa.svg) center/80% no-repeat #191716;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
 #cubyka .grande:nth-child(12){
     background: url(img/Contenido/Cubyka/cubyka_poster\ 1.jpg) no-repeat center center/cover #191716;
 }
 
-
-
+/*CATALOGO DE ARTE DE TORRES GARCIA*/
 #catalogo .principal1{
     background: url(img/Contenido/editorial/Catalogo/foto.jpg) no-repeat center center/cover #FFFBFF;
 }
-
 #catalogo .principal2{
     background: url(img/Contenido/editorial/Catalogo/catalogo_portada\ 2.jpg) no-repeat center center/cover #191716;
 }
-
 #catalogo .largo1{
     background: url(img/Contenido/editorial/Catalogo/tipografia_catalogo.svg) center/65% no-repeat,
     url(img/Contenido/editorial/Catalogo/catalogo_textura\ 1.jpg) center/cover no-repeat;
 }
-
 #catalogo .medio1{
     background: url(img/Contenido/editorial/Catalogo/paxinlucem.jpg) no-repeat center center/cover #FCF8F8;
 }
-
 #catalogo .medio2{
     background: url(img/Contenido/editorial/Catalogo/catalogo_mockup1.jpg) no-repeat center center/cover #FCF8F8;
 }
-
 #catalogo .medio3{
     background: url(img/Contenido/editorial/Catalogo/indesign_catalogo.jpg) no-repeat center center/cover #191716;
 }
-
 #catalogo .medio4{
     background: url(img/Contenido/editorial/Catalogo/indice.svg) center/75% no-repeat,
     url(img/Contenido/editorial/Catalogo/catalogo_textura\ 1.jpg) center/cover no-repeat;
 }
-
 #catalogo .largo2{
     background: url(img/Contenido/editorial/Catalogo/paxinlucem_reconstruido.jpg) no-repeat center center/cover #FCF8F8;
 }
-
 #catalogo .grande{
     background: url(img/Contenido/editorial/Catalogo/catalogo_mockup2.jpg) no-repeat center center/cover #FCF8F8;
 }
 
-
-
-
+/*LA DICTADURA DEL DISEÑO*/
 #dictadura .principal1{
     background: url(img/Contenido/editorial/Dictadura/dictadura_mockup1.jpg) no-repeat center center/cover #FFFBFF;
 }
-
 #dictadura .principal2{
     background: url(img/Contenido/editorial/Dictadura/dictadura_mockup2.jpg) no-repeat center center/cover #191716;
 }
-
 #dictadura .largo1{
     background: url(img/Contenido/editorial/Dictadura/titulo.svg) center/80% no-repeat #FFFBFF;
 }
-
 #dictadura .medio1{
     background: url(img/Contenido/editorial/Dictadura/portada.svg) center/100% no-repeat #FFFBFF;
 }
-
 #dictadura .medio2{
     background: url(img/Contenido/editorial/Dictadura/tipografia_dictadura.svg) center/70% no-repeat #FFFBFF;
 }
-
 #dictadura .medio3{
     background: url(img/Contenido/editorial/Dictadura/indesign_dictadura.jpg) no-repeat center center/cover #191716;
 }
-
 #dictadura .medio4{
     background: url(img/Contenido/editorial/Dictadura/jerarquias.svg) center/85% no-repeat #FFFBFF;
 }
 
-
-
+/*REVISTA PRETEXT*/
 #pretext .principal1{
     background: url(img/Contenido/editorial/Pretext/pretext.svg) center/80% no-repeat #FFFBFF;
 }
-
 #pretext .principal2{
     background: url(img/Contenido/editorial/Pretext/pretext_mockup1.jpg) no-repeat center center/cover #191716;
 }
-
 #pretext .medio1{
     background: url(img/Contenido/editorial/Pretext/pretext_cascos.svg) center/75% no-repeat,
     url(img/Contenido/editorial/Pretext/fibra_de_carbono.jpg) center/cover no-repeat;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
 #pretext .medio2{
     background: url(img/Contenido/editorial/Pretext/e2024.svg) center/40% no-repeat,
     url(img/Contenido/editorial/Pretext/fibra_de_carbono.jpg) center/cover no-repeat;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
-#pretext .paleta1{
-    background-color: #E30613;
-}
-
+#pretext .paleta1{ background-color: #E30613; }
 #pretext .paleta2{
     background-color: #552581;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
-#pretext .paleta3{
-    background-color: #FADE41;
-}
-
+#pretext .paleta3{ background-color: #FADE41; }
 #pretext .paleta4{
     background-color: #006342;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
-#pretext .paleta5{
-    background-color: #FF7F11;
-}
-
+#pretext .paleta5{ background-color: #FF7F11; }
 #pretext .largo1{
     background: url(img/Contenido/editorial/Pretext/tipografias_revista.svg) center/75% no-repeat #071013;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
-
-
 #pretext .medio3{
     background: url(img/Contenido/editorial/Pretext/revista_procesos_1.JPG) no-repeat center center/cover #191716;
 }
-
 #pretext .medio4{
     background: url(img/Contenido/editorial/Pretext/indesign_revista.jpg) no-repeat center center/cover #FCF8F8;
 }
-
 #pretext .largo2{
     background: url(img/Contenido/editorial/Pretext/infografia.svg) center/80% no-repeat #071013;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
 #pretext .medio3:nth-child(15){
     background: url(img/Contenido/editorial/Pretext/tabla1.svg) center/90% no-repeat #071013;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
 #pretext .medio4:nth-child(16){
     background: url(img/Contenido/editorial/Pretext/tabla2.svg) center/90% no-repeat #071013;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
-
 #pretext .largo2:nth-child(17){
     background: url(img/Contenido/editorial/Pretext/lanzado.jpg) no-repeat center center/cover #071013;
     border: none;
 }
-
 #pretext .grande{
     background-color: #071013;
     width: 100%;
@@ -1137,8 +891,6 @@ body .contenidogrid{
     position: relative;
     overflow: hidden;
 }
-
-
 #pretext .grande video{
     width: 100%;
     height: 100%;
@@ -1148,41 +900,20 @@ body .contenidogrid{
     left: 0;
 }
 
-
-
-
-
+/*PAGINA WEB DESKTOP Y MOBILE DE OAK*/
 #oakk .medio1{
     background: url(img/Contenido/interfaces/Oak/tipografias_oak.svg) center/65% no-repeat #F5EFF0;
 }
-
 #oakk .medio2{
     background: url(img/Contenido/interfaces/Oak/logo.svg) center/40% no-repeat #F5EFF0;
 }
-
-
-#oakk .paleta1{
-    background-color: #B26300;
-}
-
-#oakk .paleta2{
-    background-color: #0D8393;
-}
-
+#oakk .paleta1{ background-color: #B26300; }
+#oakk .paleta2{ background-color: #0D8393; }
 #oakk .paleta3{
     background-color: #807A7A;
-    border: clamp(2px, 0.5vw, 5px) solid #F5EFF0;
-}
-
-#oakk .paleta4{
-    background-color: #5E8052;
-}
-
-#oakk .paleta5{
-    background-color: #DA0B0B;
-}
-
-
+    border: clamp(2px, 0.5vw, 5px) solid #F5EFF0; }
+#oakk .paleta4{ background-color: #5E8052; }
+#oakk .paleta5{ background-color: #DA0B0B; }
 #oakk .largo1{
     background-color: #071013;
     width: 100%;
@@ -1190,7 +921,6 @@ body .contenidogrid{
     position: relative;
     overflow: hidden;
 }
-
 #oakk .largo1 video{
     width: 100%;
     height: 100%;
@@ -1199,9 +929,6 @@ body .contenidogrid{
     top: 0;
     left: 0;
 }
-
-
-
 #oakk .cuadrado{
     background-color: #071013;
     width: 100%;
@@ -1210,8 +937,6 @@ body .contenidogrid{
     overflow: hidden;
     border: clamp(2px, 0.5vw, 5px) solid #F5EFF0;
 }
-
-
 #oakk .cuadrado video{
     width: 100%;
     height: 100%;
@@ -1220,69 +945,43 @@ body .contenidogrid{
     top: 0;
     left: 0;
 }
-
-
 #oakk .largo2{
     background: url(img/Contenido/interfaces/Oak/botones_oak.svg) center/80% no-repeat #071013;
     border: clamp(2px, 0.5vw, 5px) solid #F5EFF0;
 }
-
 #oakk .grande{
     background: url(img/Contenido/interfaces/Oak/oak_mockuo.jpg) no-repeat center center/cover #FCF8F8;
 }
 
-
-
+/*APP DE REVENTA DE ENTRADAS*/
 #entradas .grande{
     background: url(img/Contenido/interfaces/Entradas/mockups.png) center/50% no-repeat #FDFFFC;
 }
-
 #entradas .principal1{
     background: url(img/Contenido/interfaces/Entradas/emtradas_bocetos.jpg) no-repeat center center/cover #071013;
 }
-
 #entradas .principal2{
     background: url(img/Contenido/interfaces/Entradas/entradas_bocetos.jpg) no-repeat center center/cover #071013;
 }
-
-#entradas .paleta1{
-    background-color: #1E2EDE;
-}
-
-#entradas .paleta2{
-    background-color: #1F7A1C;
-}
-
-#entradas .paleta3{
-    background-color: #CFD6E5;
-}
-
-#entradas .paleta4{
-    background-color: #FCBF49;
-}
-
-#entradas .paleta5{
-    background-color: #ED1C24;
-}
-
+#entradas .paleta1{ background-color: #1E2EDE; }
+#entradas .paleta2{ background-color: #1F7A1C; }
+#entradas .paleta3{ background-color: #CFD6E5; }
+#entradas .paleta4{ background-color: #FCBF49; }
+#entradas .paleta5{ background-color: #ED1C24; }
 #entradas .medio1{
     background: url(img/Contenido/interfaces/Entradas/botones_entradas.svg) center/75% no-repeat #1E2EDE;
 }
-
 #entradas .medio2{
     background: url(img/Contenido/interfaces/Entradas/tipografia_entradas.svg) center/75% no-repeat #FDFFFC;
 }
-
 #entradas .medio3{
     background: url(img/Contenido/interfaces/Entradas/wireframe1.svg) center/60% no-repeat #020100;
     border: clamp(2px, 0.5vw, 5px) solid #FDFFFC;
 }
-
 #entradas .medio4{
     background: url(img/Contenido/interfaces/Entradas/wireframe2.svg) center/60% no-repeat #020100;
     border: clamp(2px, 0.5vw, 5px) solid #FDFFFC;
 }
-
 #entradas .largo1{
     background-color: #071013;
     width: 100%;
@@ -1290,7 +989,6 @@ body .contenidogrid{
     position: relative;
     overflow: hidden;
 }
-
 #entradas .largo1 video{
     width: 100%;
     height: 100%;
@@ -1299,12 +997,9 @@ body .contenidogrid{
     top: 0;
     left: 0;
 }
-
 #entradas .grande:nth-child(15){
     background: url(img/Contenido/interfaces/Entradas/grillas.svg) center/100% no-repeat #FDFFFC;
 }
-
-
 #entradas .cuadrado{
     background-color: #071013;
     width: 100%;
@@ -1313,8 +1008,6 @@ body .contenidogrid{
     overflow: hidden;
     border: clamp(2px, 0.5vw, 5px) solid #FDFFFC;
 }
-
-
 #entradas .cuadrado video{
     width: 100%;
     height: 100%;
@@ -1324,65 +1017,45 @@ body .contenidogrid{
     left: 0;
 }
 
-
+/*MONOGRAFIA SOBRE SUSAN KARE*/
 #monografia .principal1{
     background: url(img/Contenido/Monografia/Pionera\ 1.jpg) no-repeat center right/cover #E6E8E6;
 }
-
 #monografia .principal2{
     background: url(img/Contenido/Monografia/panel\ de\ control.jpg) center/70% no-repeat #191716;
     border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
 }
-
-#monografia .paleta1{
-    background-color: #E6E8E6;
-}
-
-#monografia .paleta2{
-    background-color: #C4C4C4;
-}
-
+#monografia .paleta1{ background-color: #E6E8E6; }
+#monografia .paleta2{ background-color: #C4C4C4; }
 #monografia .paleta3{
     background-color: #000501;
-    border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
-}
-
+    border: clamp(2px, 0.5vw, 5px) solid #E6E8E6; }
 #monografia .paleta4{
     background-color: #020887;
     border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
 }
-
-#monografia .paleta5{
-    background-color: #F7E05D;
-}
-
+#monografia .paleta5{ background-color: #F7E05D; }
 #monografia .largo1{
     background: url(img/Contenido/Monografia/tipografias_monografia.svg) center/70% no-repeat #C4C4C4;
 }
-
 #monografia .medio1{
     background: url(img/Contenido/Monografia/Iconos.svg) center/70% no-repeat #191716;
     border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
 }
-
 #monografia .medio2{
     background: url(img/Contenido/Monografia/Apple.svg) center/10% no-repeat #191716;
     border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
 }
-
 #monografia .medio3{
     background: url(img/Contenido/Monografia/bocetos1.jpg) no-repeat center center/cover #191716;
 }
-
 #monografia .medio4{
     background: url(img/Contenido/Monografia/bocetos\ 2.jpg) no-repeat center center/cover #191716;
 }
-
 #monografia .largo2{
     background: url(img/Contenido/Monografia/Susan\ Kare.svg) center/70% no-repeat #191716;
     border: clamp(2px, 0.5vw, 5px) solid #E6E8E6;
 }
-
 #monografia .grande{
     background-color: #E6E8E6;
     width: 100%;
@@ -1399,54 +1072,32 @@ body .contenidogrid{
     left: 0;
 }
 
-
-
+/*SELLOS LETTERPRESS NYC*/
 #nyc .largo1{
     background: url(img/Contenido/composicion/Sellos/mesa_sellos.jpg) no-repeat center center/cover #191716;
 }
-
 #nyc .principal1{
     background: url(img/Contenido/composicion/Sellos/Sello1.JPG) no-repeat center center/cover #191716;
 }
-
 #nyc .principal2{
     background: url(img/Contenido/composicion/Sellos/Sello2.JPG) no-repeat center center/cover #191716;
 }
-
 #nyc .grande{
     background: url(img/Contenido/composicion/Sellos/NYC-gif.gif) no-repeat center center/cover #191716;
 }
 
-
-
+/*PIXEL ART DEL MAPA DE URUGUAY*/
 #mapa .principal1{
     background: url(img/Contenido/composicion/Mapa/proceso1.JPG) no-repeat center center/cover #191716;
 }
-
 #mapa .principal2{
     background: url(img/Contenido/composicion/Mapa/proceso2.JPG) no-repeat center center/cover #191716;
 }
-
-#mapa .paleta1{
-    background-color: #E8D100;
-}
-
-#mapa .paleta2{
-    background-color: #F17028;
-}
-
-#mapa .paleta3{
-    background-color: #E41F34;
-}
-
-#mapa .paleta4{
-    background-color: #0079BB;
-}
-
-#mapa .paleta5{
-    background-color: #73B34A;
-}
-
+#mapa .paleta1{ background-color: #E8D100; }
+#mapa .paleta2{ background-color: #F17028; }
+#mapa .paleta3{ background-color: #E41F34; }
+#mapa .paleta4{ background-color: #0079BB; }
+#mapa .paleta5{ background-color: #73B34A; }
 #mapa .medio1{
     background-color: #E6E8E6;
     width: 100%;
@@ -1462,25 +1113,57 @@ body .contenidogrid{
     top: 0;
     left: 0;
 }
-
 #mapa .medio2{
     background: url(img/Contenido/composicion/Mapa/boceto.JPG) no-repeat center center/cover #191716;
 }
-
 #mapa .grande{
     background: url(img/Contenido/composicion/Mapa/mapa.svg) center/50% no-repeat #071013;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
 
-
-
+/*FOOTER*/
 footer{
-    height: 20vh;
+    height: 15vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2%;
+}
+footer div{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 3%;
 }
-
-footer #startbutton{
-    transform: rotate(180deg);
+footer .contacto{
+    min-width: 370px;
+    display: flex;
+    gap: 4%;
 }
+footer .contacto a,
+footer .contacto a div,
+footer .contacto a div p{
+    width: 100%;
+}
+footer div #startbutton{
+    transform: scale(60%) rotate(180deg);
+}
+footer div #startbutton:hover{
+    transform: scale(80%) rotate(180deg);
+}
+footer div #casita{
+    transform: translate(0%, 0%);
+}
+footer div #casita:hover{
+    transform: scale(120%) translate(0%, 0%);
+}
+footer div a div .cuadradito{
+    background-color: #191716;
+    transition: all 0.5s ease;
+}
+footer .contacto a:hover .interfaces{ background-color: #0D3B66; }
+footer .contacto a:hover .composicion{ background-color: #03A63C; }
+footer .contacto a:hover .identidad{ background-color: #F2E30C; }
+footer .contacto a:hover .tipografia{ background-color: #F23D3D; }

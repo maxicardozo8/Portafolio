@@ -1,58 +1,49 @@
 @media (max-width: 500px) {
     
+    /*GENERALIDADES*/
     h3{
         font-size: 1.2em;
     }
-
     h1{
         font-size: 3.4em;
     }
-    
     h2{
         font-size: 1.9em;
     }
-
     p{
         font-size: 0.8em
     }
 
+    /*PANTALLA INICIAL PRESENTACION*/
     #portada1 span{
         min-width: 70px;
     }
-
     #portada1 div{
         padding: 1em 0;
     }
-
     #portada1 div div h2:nth-child(1){
         padding-bottom: 1%;
     }
-
     #portada1 div img{
         width: 230px;
     }
 
+    /* MENU HAMBURGUESA */
     nav #menu {
         left: 3%;
     }
-
-
     #inputmenu:checked ~ #toggle {
         left: 57%;
     }
-
     #inputmenu:checked ~ #menu {
         left: 55%;
     }
-
-
     nav{
         width: 50%;
         padding: 100px 8%;
     }
 
-
-
+    /* PARA QUE SE ACOMODEN AL HACER HOVER */
     #indice:has(#amarillo:hover) #amarillo h3,
     #indice:has(#rojo:hover) #rojo h3,
     #indice:has(#naranja:hover) #naranja h3,
@@ -61,91 +52,84 @@
     #indice:has(#verde:hover) #verde h3 {
     left: -3%;
     top: 1%;
-}
+    }
 
-body .contenidogrid{
-    width: 95%;
-    gap: 1em;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 70px;
-}
+    /*GRILLA CON PROYECTOS*/
+    body .contenidogrid{
+        width: 95%;
+        gap: 1em;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 70px;
+    }
+    .contenidogrid div{
+        border-radius: 1em;
+    }
+    .contenidogrid .cuadrado{
+        grid-column: span 4;
+        grid-row: span 5;
+    }
+    .contenidogrid .principal1{
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+    .contenidogrid .principal2{
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+    .contenidogrid .paleta1{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .contenidogrid .paleta2{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .contenidogrid .paleta3{
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    .contenidogrid .paleta4{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .contenidogrid .paleta5{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .contenidogrid .largo1{
+        grid-column: span 4;
+        grid-row: span 2;
+    }
+    .contenidogrid .medio1{
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+    .contenidogrid .medio2{
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+    .contenidogrid .medio3{
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+    .contenidogrid .medio4{
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+    .contenidogrid .largo2{
+        grid-column: span 4;
+        grid-row: span 2;
+    }
+    .contenidogrid .grande{
+        grid-column: span 4;
+        grid-row: span 4;
+    }
+    .contenidogrid .aclaracion{
+        grid-column: span 4;
+    }
 
-.contenidogrid div{
-    border-radius: 1em;
-}
-
-.contenidogrid .principal1{
-    grid-column: span 4;
-    grid-row: span 3;
-}
-
-.contenidogrid .principal2{
-    grid-column: span 4;
-    grid-row: span 3;
-}
-
-.contenidogrid .paleta1{
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.contenidogrid .paleta2{
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.contenidogrid .paleta3{
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.contenidogrid .paleta4{
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.contenidogrid .paleta5{
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.contenidogrid .largo1{
-    grid-column: span 4;
-    grid-row: span 2;
-}
-
-.contenidogrid .medio1{
-    grid-column: span 4;
-    grid-row: span 3;
-}
-
-.contenidogrid .medio2{
-    grid-column: span 4;
-    grid-row: span 3;
-}
-
-.contenidogrid .medio3{
-    grid-column: span 4;
-    grid-row: span 3;
-}
-
-.contenidogrid .medio4{
-    grid-column: span 4;
-    grid-row: span 3;
-}
-
-.contenidogrid .largo2{
-    grid-column: span 4;
-    grid-row: span 2;
-}
-
-.contenidogrid .grande{
-    grid-column: span 4;
-    grid-row: span 4;
-}
-
-.contenidogrid .aclaracion{
-    grid-column: span 4;
-}
-
+    /*FOOTER*/
+    footer .contacto{
+        min-width: 180px;
+    }
 }
