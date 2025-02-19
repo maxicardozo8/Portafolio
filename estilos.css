@@ -708,7 +708,7 @@ body .contenidogrid{
 #lacertilia .paleta4{ background-color: #6499CC; }
 #lacertilia .paleta5{ background-color: #2D50A1; }
 #lacertilia .largo1{
-    background: url(img/Contenido/identidad/Lacertilia/lacertilia_tipografias.svg) center/65% no-repeat,
+    background: url(img/Contenido/identidad/Lacertilia/lacertilia_tipografias.svg) center/70% no-repeat,
     url(img/Contenido/identidad/Lacertilia/fondo_blanco_lacertilia.jpg) center/cover no-repeat;
 }
 #lacertilia .medio1{
@@ -784,7 +784,7 @@ body .contenidogrid{
     background: url(img/Contenido/editorial/Catalogo/catalogo_portada\ 2.jpg) no-repeat center center/cover #191716;
 }
 #catalogo .largo1{
-    background: url(img/Contenido/editorial/Catalogo/tipografia_catalogo.svg) center/65% no-repeat,
+    background: url(img/Contenido/editorial/Catalogo/tipografia_catalogo.svg) center/70% no-repeat,
     url(img/Contenido/editorial/Catalogo/catalogo_textura\ 1.jpg) center/cover no-repeat;
 }
 #catalogo .medio1{
@@ -859,7 +859,7 @@ body .contenidogrid{
 }
 #pretext .paleta5{ background-color: #FF7F11; }
 #pretext .largo1{
-    background: url(img/Contenido/editorial/Pretext/tipografias_revista.svg) center/75% no-repeat #071013;
+    background: url(img/Contenido/editorial/Pretext/tipografias_revista.svg) center/85% no-repeat #071013;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
 #pretext .medio3{
@@ -869,7 +869,7 @@ body .contenidogrid{
     background: url(img/Contenido/editorial/Pretext/indesign_revista.jpg) no-repeat center center/cover #FCF8F8;
 }
 #pretext .largo2{
-    background: url(img/Contenido/editorial/Pretext/infografia.svg) center/80% no-repeat #071013;
+    background: url(img/Contenido/editorial/Pretext/infografia.svg) center/90% no-repeat #071013;
     border: clamp(2px, 0.5vw, 5px) solid #FFFBFF;
 }
 #pretext .medio3:nth-child(15){
@@ -1036,7 +1036,7 @@ body .contenidogrid{
 }
 #monografia .paleta5{ background-color: #F7E05D; }
 #monografia .largo1{
-    background: url(img/Contenido/Monografia/tipografias_monografia.svg) center/70% no-repeat #C4C4C4;
+    background: url(img/Contenido/Monografia/tipografias_monografia.svg) center/80% no-repeat #C4C4C4;
 }
 #monografia .medio1{
     background: url(img/Contenido/Monografia/Iconos.svg) center/70% no-repeat #191716;
