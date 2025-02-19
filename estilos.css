@@ -108,6 +108,9 @@ h3{
     position: relative;
     transition: all 0.5s ease;
 }
+#portada1 #startbutton:hover{
+    transform: scale(120%);
+}
 #startbutton img{
     position: absolute;
     top: 50%;
@@ -402,9 +405,6 @@ nav {
     margin: 0 auto;
     padding: 1% 0;
     position: relative;
-}
-nav #startbutton:hover{
-    transform: scale(120%);
 }
 nav a{
     text-decoration: none;
